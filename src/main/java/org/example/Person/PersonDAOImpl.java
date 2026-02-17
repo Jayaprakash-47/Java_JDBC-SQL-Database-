@@ -2,11 +2,12 @@ package org.example.Person;
 
 import org.example.DBConnection.DatabaseConnection;
 import org.example.entity.Person;
+import org.springframework.stereotype.Component;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
-
+@Component
 public class PersonDAOImpl implements PersonDAO {
     @Override
     public void createTable() {
